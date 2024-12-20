@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: skyblue;
+  margin-bottom: 5px;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: skyblue;
+  margin-bottom: 20px;
+
+}
+
+.search input {
+  padding: 12px 20px; /* Adjust padding for a balanced look */
+  width: 300px; /* Wider input for better usability */
+  margin-right: 10px;
+  border: 2px solid #007bff; /* A vibrant border color */
+  border-radius: 25px; /* Smooth, pill-shaped design */
+  outline: none; /* Removes the default outline */
+  font-size: 16px; /* Larger font size for readability */
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa); /* Subtle gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  transition: all 0.3s ease; /* Smooth transitions on hover/focus */
+}
+
+.search input:focus {
+  border-color: #0056b3; /* Darker blue for focus */
+  background: #ffffff; /* Clean white for focus */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on focus */
+}
+
+.search input::placeholder {
+  color: #007bff; /* Matches the border color */
+  opacity: 0.7; /* Slight transparency for the placeholder */
+  font-style: italic; /* Adds some style to the placeholder */
+}
+
+.search input:hover {
+  border-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 10px rgba(0, 91, 187, 0.2); /* Slightly more pronounced shadow */
+  cursor: pointer;
+}
+
+
+.search button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+.weather-card {
+  margin-top: 20px;
+  background: turquoise;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  
+}
+
+.weather-card img {
+  margin-top: 10px;
+}
+
+.header {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.app-footer {
+  position: fixed; /* Keeps it at the bottom */
+  bottom: 0;
+  width: 100%; /* Full-width footer */
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Subtle gradient background */
+  color: white; /* Text color for readability */
+  text-align: center; /* Centers the text */
+  padding: 10px 0; /* Adds vertical spacing */
+  font-size: 14px; /* Smaller, non-intrusive font size */
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.app-footer p {
+  margin: 0; /* Removes default paragraph margin */
+  font-family: "Arial", sans-serif; /* Clean, modern font */
+}
+
+.app-footer a {
+  color: #ffdd57; /* Vibrant link color */
+  text-decoration: none; /* Removes the underline */
+  font-weight: bold; /* Makes the link stand out */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.app-footer a:hover {
+  color: #ffd700; /* Slightly brighter hover effect */
+}
+
+.app-footer p::before {
+  content: ""; /* Decorative line above the footer */
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: white;
+  margin: 0 auto 10px auto;
+  opacity: 0.3; /* Faint line for subtle styling */
+}
